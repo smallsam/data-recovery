@@ -66,5 +66,3 @@ output_file_path="$3"
 
 echo "Starting from $initial_path in $device device. Saving output: $output_file_path"
 recursive_ls "$initial_path" "$device" "$output_file_path"
-
-#debugfs -R "ls -l Multimedia" /dev/mapper/cachedev1 | awk '{print $9}' | grep "^[^\.@]" | sort | xargs debugfs -R ls -l Multimedia/{} /dev/mapper/cachedev1
